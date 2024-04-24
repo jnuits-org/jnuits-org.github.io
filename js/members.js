@@ -78,7 +78,7 @@ async function displayProfileCards(){
   function generateProfileCard(profile) {
     
     return`
-      <div  class="w-10/12 m-2 justify-center items-center mx-auto  ">
+      <div  data-aos="zoom-in" class="w-10/12 m-2 justify-center items-center mx-auto  ">
       
       <div class="bg-white shadow-xl rounded-lg py-3">
           <div class="photo-wrapper p-2">
@@ -121,6 +121,7 @@ async function displayProfileCards(){
 
   // Add event listener for search input
   searchInput.addEventListener('input', () => {
+    
     const searchText = searchInput.value.toLowerCase();
     const filteredProfiles = profiles.filter(profile => profile.name.toLowerCase().includes(searchText) || profile.Id.toLowerCase().includes(searchText));
     profileCardsContainer.innerHTML = filteredProfiles.map(generateProfileCard).join('');
