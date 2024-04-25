@@ -30,7 +30,7 @@ async function juwel(){
                   </tr>
                   <tr>
                   <td class="px-2 py-2 text-gray-500 font-semibold">Batch:</td>
-                  <td class="px-2 py-2">${profile.bloodGroup}</td>
+                  <td class="px-2 py-2 text-red-700 ">${profile.bloodGroup}</td>
               </tr>
                   
               </tbody></table>
