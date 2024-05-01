@@ -3,213 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
      <!--=============== REMIXICONS ===============-->
      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
      <!--=============== CSS ===============-->
      <link rel="stylesheet" href="../assets/css/nav.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Ongoing events</title>
+    <title>Video Gallery</title>
 </head>
 <body>
-
-    <!-- navbar  -->
-     <!--=============== HEADER ===============-->
-     <header class="header pr-5">
-      <nav class="nav container">
-         <div class="nav__data">
-            <a href="../index.html" class="nav__logo">
-             <img src="../images/jnuitslogo.png" class=" w-10  h-10 " alt="JnUITS logo" srcset="">    JnUITS
-            </a>
-            
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-line nav__burger"></i>
-               <i class="ri-close-line nav__close"></i>
-            </div>
-         </div>
-
-         <!--=============== NAV MENU ===============-->
-         <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-               <li><a href="../index.html" class="nav__link">Home</a></li>
-
-               <li><a href="#" class="nav__link">About</a></li>
-
-               <!--=============== DROPDOWN 1 ===============-->
-               <li class="dropdown__item">
-
-                  <div class="nav__link">
-                     Events <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                  </div>
-
-                  <ul class="dropdown__menu">
-                     <li>
-                        <a href="#" class="dropdown__link">
-                           <i class="ri-earth-fill"></i> National IT Fest 2024 
-                        </a>                          
-                     </li>
-
-                     <li>
-                        <a href="#" class="dropdown__link">
-                           <i class="ri-briefcase-line"></i> Jagannath University Job Fair 2024
-                        </a>
-                     </li>
-
-                     <!-- <li>
-                        <a href="./ongoingEvents.html" class="dropdown__link">
-                           <i class="ri-calendar-event-line"></i> Ongoing Events
-                        </a>
-                     </li> -->
-
-                     <li>
-                        <a href="#" class="dropdown__link">
-                           <i class="ri-calendar-event-line"></i> Upcoming Events
-                        </a>
-                     </li>
-
-                     <li>
-                        <a href="#" class="dropdown__link">
-                           <i class="ri-calendar-close-fill"></i> Past Events
-                        </a>
-                     </li>
-
-                     <!--=============== DROPDOWN SUBMENU ===============-->
-                     <!-- <li class="dropdown__subitem">
-                        <div class="dropdown__link">
-                           <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
-                        </div>
-
-                        <ul class="dropdown__submenu">
-                           <li>
-                              <a href="#" class="dropdown__sublink">
-                                 <i class="ri-file-list-line"></i> Documents
-                              </a>
-                           </li>
-   
-                           <li>
-                              <a href="#" class="dropdown__sublink">
-                                 <i class="ri-cash-line"></i> Payments
-                              </a>
-                           </li>
-   
-                           <li>
-                              <a href="#" class="dropdown__sublink">
-                                 <i class="ri-refund-2-line"></i> Refunds
-                              </a>
-                           </li>
-
-                        </ul>
-
-                     </li> -->
-                  
-                  </ul>
-               </li>
-               
+     <!-- navbar  -->
+       <!--=============== HEADER ===============-->
+       <header class="header  pr-5">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href="../index.html" class="nav__logo">
+               <img src="../images/jnuitslogo.png" class=" w-10  h-10 " alt="JnUITS logo" srcset="">    JnUITS
+              </a>
               
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
 
-               <!--=============== DROPDOWN 2 ===============-->
-               <li class="dropdown__item">
-                  <div class="nav__link">
-                     Committee <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                  </div>
+           <!--=============== NAV MENU ===============-->
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li><a href="../index.html" class="nav__link">Home</a></li>
 
-                  <ul class="dropdown__menu">
-                     <li>
-                        <a href="#" class="dropdown__link">
-                           <i class="ri-user-line"></i> Advisory Panel
-                        </a>                          
-                     </li>
+                 <li><a href="#" class="nav__link">About</a></li>
 
-                     <li>
-                        <a href="#" class="dropdown__link">
-                           <i class="ri-group-line"></i> Founding Committee
-                        </a>
-                     </li>
+                 <!--=============== DROPDOWN 1 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Events <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
 
-                     <li>
-                        <a href="#" class="dropdown__link">
-                           <i class="ri-group-2-line"></i> 2nd Committee
-                        </a>
-                     </li>
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-earth-fill"></i> National IT Fest 2024 
+                          </a>                          
+                       </li>
 
-                     <li>
-                        <a href="#" class="dropdown__link">
-                           <i class="ri-group-fill"></i> Current Committee
-                        </a>
-                     </li>
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-briefcase-line"></i> Jagannath University Job Fair 2024
+                          </a>
+                       </li>
 
-                  </ul>
-               </li>
+                       <li>
+                          <a href="./ongoingEvents.html" class="dropdown__link">
+                             <i class="ri-calendar-event-line"></i> Ongoing Events
+                          </a>
+                       </li>
 
-               <!--=============== DROPDOWN 3 ===============-->
-               <li class="dropdown__item">
-                  <div class="nav__link">
-                     Gallery <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                  </div>
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-calendar-event-line"></i> Upcoming Events
+                          </a>
+                       </li>
 
-                  <ul class="dropdown__menu">
-                     <li>
-                        <a href="#" class="dropdown__link">
-                           <i class="ri-camera-line"></i> Photo Gallery
-                        </a>                          
-                     </li>
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-calendar-close-fill"></i> Past Events
+                          </a>
+                       </li>
 
-                     <li>
-                        <a href="../html/videoGallary.html" class="dropdown__link">
-                           <i class="ri-video-line"></i> Video Gallery
-                        </a>
-                     </li>
+                       <!--=============== DROPDOWN SUBMENU ===============-->
+                       <!-- <li class="dropdown__subitem">
+                          <div class="dropdown__link">
+                             <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                          </div>
 
-                  </ul>
-               </li>
+                          <ul class="dropdown__submenu">
+                             <li>
+                                <a href="#" class="dropdown__sublink">
+                                   <i class="ri-file-list-line"></i> Documents
+                                </a>
+                             </li>
+     
+                             <li>
+                                <a href="#" class="dropdown__sublink">
+                                   <i class="ri-cash-line"></i> Payments
+                                </a>
+                             </li>
+     
+                             <li>
+                                <a href="#" class="dropdown__sublink">
+                                   <i class="ri-refund-2-line"></i> Refunds
+                                </a>
+                             </li>
+
+                          </ul>
+
+                       </li> -->
+                    
+                    </ul>
+                 </li>
+                 
+                
+
+                 <!--=============== DROPDOWN 2 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Committee <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-user-line"></i> Advisory Panel
+                          </a>                          
+                       </li>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-group-line"></i> Founding Committee
+                          </a>
+                       </li>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-group-2-line"></i> 2nd Committee
+                          </a>
+                       </li>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-group-fill"></i> Current Committee
+                          </a>
+                       </li>
+
+                    </ul>
+                 </li>
+
+                 <!--=============== DROPDOWN 3 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Gallery <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-camera-line"></i> Photo Gallery
+                          </a>                          
+                       </li>
+
+                       <!-- <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-video-line"></i> Video Gallery
+                          </a>
+                       </li> -->
+
+                    </ul>
+                 </li>
 
 
-               <!--=============== DROPDOWN 4 ===============-->
-               <li class="dropdown__item">
-                  <div class="nav__link">
-                     Join us <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                  </div>
+                 <!--=============== DROPDOWN 4 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Join us <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
 
-                  <ul class="dropdown__menu">
-                     <li>
-                        <a href="#" class="dropdown__link">
-                           <i class="ri-survey-line"></i>  Registration Form
-                        </a>                          
-                     </li>
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-survey-line"></i>  Registration Form
+                          </a>                          
+                       </li>
 
-                     <li>
-                        <a href="#" class="dropdown__link">
-                           <i class="ri-information-line"></i> Why join us
-                        </a>
-                     </li>
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-information-line"></i> Why join us
+                          </a>
+                       </li>
 
-                  </ul>
-               </li>
+                    </ul>
+                 </li>
 
-               <li><a href="./members.html" class="nav__link">Members</a></li>
-            </ul>
-         </div>
-      </nav>
-   </header>
-  
+                 
+                 <li><a href="./members.html" class="nav__link">Members</a></li>
 
-<h1 class=" mt-20  md:mt-28  flex-wrap mx-auto  p-3 rounded-md w-5/6 h-auto bg-blue-300 text-xl font-semibold  text-white "> Basic Computer Course  to thrive in the 4th Industrial Revolution </h1>
-<div class=" m-4 p-4 mx-auto justify-center align-middle ">
-    <iframe class=" text-justify items-center h-screen w-[95%] mx-auto " src="https://docs.google.com/forms/d/e/1FAIpQLSfHi6BLrnzI2QniFo5BbLMd91p4yI5-X-uhywImj4yHPFTBmQ/closedform"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div>
+                 <!-- <li><a href="#" class="nav__link">Contact</a></li> -->
+              </ul>
+           </div>
+        </nav>
+     </header>
+    
+  <!-- footer -->
 
-
-
-<div class=" m-4 p-4 mx-auto justify-center align-middle ">
-    <iframe class=" text-justify items-center h-screen w-[95%] mx-auto " src="https://docs.google.com/forms/d/e/1FAIpQLScrTHqJdJV1NVn7CAiiPQIzs2K7-3dkrM7kWqwJnG4FdDJFZA/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div>
-
-
-
-      <!-- footer -->
-
-<footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100" >
-    <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8" data-aos="zoom-in">
+  <footer class="bg-gradient-to-r mt-16 from-gray-100 via-[#bce1ff] to-gray-100" >
+    <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8" >
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
   
         <!-- social links  -->

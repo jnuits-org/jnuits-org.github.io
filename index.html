@@ -9,149 +9,201 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!--=============== REMIXICONS ===============-->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+     <!--=============== CSS ===============-->
+     <link rel="stylesheet" href="./assets/css/nav.css">
 </head>
 <body>
     <!-- nav -->
-<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 shadow-md">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="/index.html" class="flex items-center">
-      <img src="./images/jnuitslogo.png" class="h-8 mr-3" alt="codewithfaraz Logo" />
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">JnUITS</span>
-  </a>
-    <button id="navbar-toggle" data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-       
-        <!-- home  -->
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
-        </li>
 
-        <!-- Committee -->
-        <li>
-            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Committee<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-  </svg></button>
-            <!-- Dropdown menu1 -->
-            <div id="dropdownNavbar" class="absolute z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                  <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Advisory Panel</a>
-                  </li>
 
-                  <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Founding Committee</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2nd Committee</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Current Committee</a>
-                  </li>
-
-                </ul>
-                
-            </div>
-        </li>
-
-        <!-- Events -->
-        <li>
-            <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Events<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg></button>
-              <!-- Dropdown menu2 -->
-              <div id="dropdownNavbar2" class="absolute z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                  <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">National IT Fest 2024 </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Jagannath University Job Fair 2024</a>
-                  </li>
-                  <li>
-                    <a href="./html/ongoingEvents.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ongoing Events</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Upcoming Events</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Past Events</a>
-                  </li>
-
-                </ul>
-                
-            </div>
-        </li>
-
-        <!-- Gallery -->
-        <li>
-            <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Gallery<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg></button>
-               <!-- Dropdown menu3 -->
-               <div id="dropdownNavbar3" class="absolute z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                  <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Photo Gallery</a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Video Gallery</a>
-                  </li>
-                  
-                </ul>
-                
-            </div>
-        </li>
-
-        <!-- Join US -->
-        <li>
-          <button id="dropdownNavbarLink4" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Join US<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-          </svg></button>
-           <!-- Dropdown menu4 -->
-           <div id="dropdownNavbar4" class="absolute z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Registration Form</a>
-              </li>
-
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Why join us</a>
-              </li>
+       <!--=============== HEADER ===============-->
+       <header class="header  pr-5">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href="../index.html" class="nav__logo">
+               <img src="../images/jnuitslogo.png" class=" w-10  h-10 " alt="JnUITS logo" srcset="">    JnUITS
+              </a>
               
-            </ul>
-            
-        </div>
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
 
-        </li>
+           <!--=============== NAV MENU ===============-->
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <!-- <li><a href="../index.html" class="nav__link">Home</a></li> -->
 
-        <li>
-          <a href="./html/members.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Members</a>
-        </li>
+                 <li><a href="#" class="nav__link">About</a></li>
 
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-        </li>
+                 <!--=============== DROPDOWN 1 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Events <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
 
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blogs</a>
-        </li>
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-earth-fill"></i> National IT Fest 2024 
+                          </a>                          
+                       </li>
 
-      </ul>
-    </div>
-  </div>
-</nav>
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-briefcase-line"></i> Jagannath University Job Fair 2024
+                          </a>
+                       </li>
+
+                       <li>
+                          <a href="/html/ongoingEvents.html" class="dropdown__link">
+                             <i class="ri-calendar-event-line"></i> Ongoing Events
+                          </a>
+                       </li>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-calendar-event-line"></i> Upcoming Events
+                          </a>
+                       </li>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-calendar-close-fill"></i> Past Events
+                          </a>
+                       </li>
+
+                       <!--=============== DROPDOWN SUBMENU ===============-->
+                       <!-- <li class="dropdown__subitem">
+                          <div class="dropdown__link">
+                             <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                          </div>
+
+                          <ul class="dropdown__submenu">
+                             <li>
+                                <a href="#" class="dropdown__sublink">
+                                   <i class="ri-file-list-line"></i> Documents
+                                </a>
+                             </li>
+     
+                             <li>
+                                <a href="#" class="dropdown__sublink">
+                                   <i class="ri-cash-line"></i> Payments
+                                </a>
+                             </li>
+     
+                             <li>
+                                <a href="#" class="dropdown__sublink">
+                                   <i class="ri-refund-2-line"></i> Refunds
+                                </a>
+                             </li>
+
+                          </ul>
+
+                       </li> -->
+                    
+                    </ul>
+                 </li>
+                 
+                
+
+                 <!--=============== DROPDOWN 2 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Committee <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-user-line"></i> Advisory Panel
+                          </a>                          
+                       </li>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-group-line"></i> Founding Committee
+                          </a>
+                       </li>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-group-2-line"></i> 2nd Committee
+                          </a>
+                       </li>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-group-fill"></i> Current Committee
+                          </a>
+                       </li>
+
+                    </ul>
+                 </li>
+
+                 <!--=============== DROPDOWN 3 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Gallery <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-camera-line"></i> Photo Gallery
+                          </a>                          
+                       </li>
+
+                       <li>
+                          <a href="/html/videoGallary.html" class="dropdown__link">
+                             <i class="ri-video-line"></i> Video Gallery
+                          </a>
+                       </li>
+
+                    </ul>
+                 </li>
+
+
+                 <!--=============== DROPDOWN 4 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Join us <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-survey-line"></i>  Registration Form
+                          </a>                          
+                       </li>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-information-line"></i> Why join us
+                          </a>
+                       </li>
+
+                    </ul>
+                 </li>
+
+                 
+                 <li><a href="/html/members.html" class="nav__link">Members</a></li>
+
+                 <!-- <li><a href="#" class="nav__link">Contact</a></li> -->
+              </ul>
+           </div>
+        </nav>
+     </header>
+    
 
 <!-- hero section  -->
-<!-- loop Component: Slider with controls inside -->
-<div class="relative w-full glide-01">
+<!-- Component: Slider with controls inside -->
+<div class="relative mt-14 w-full glide-01 ">
   <!-- Slides -->
   <div class="overflow-hidden" data-glide-el="track">
       <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
@@ -180,7 +232,7 @@
 </div>
 
 <!-- about  -->
-<section class="px-3 py-5 bg-neutral-100 lg:py-10">
+<section class="px-3 py-5 bg-neutral-100 lg:py-10 overflow-hidden">
   <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
     <div class="order-2 lg:order-1 flex flex-col justify-center text-justify items-center" data-aos="fade-up" >
       <p class="text-3xl font-bold md:text-5xl text-center text-blue-600 ">Jagannath University IT Society (JnUITS) </p>
@@ -233,8 +285,9 @@
   <h1 class="text-center font-bold font-mono text-2xl text-black"> জগন্নথ বিশ্ববিদ্যালয়ের আইটি সোসাইটির সকল নোটিস   </h1>
   <hr class="bg-slate-200 mx-4 w-6/6 h-[1px]">
 
+  <!-- notice1 -->
 <div class=" justify-center w-full h-auto items-center mx-auto " > 
-  <div class="border-[#337ab7] bg-[#d9edf7] border-[1px] rounded-md w-[95%] md:w-5/6  m-5   mx-auto ">
+  <div  class="border-[#337ab7] bg-[#d9edf7]  overflow-hidden border-[1px] rounded-md w-[95%] md:w-5/6  m-5   mx-auto ">
    
       <h1 class="bg-[#337ab7]  mb-4 rounded-t-md shadow-md text-white text-md md:text-2xl p-2  font-bold font-serif"><i  class="fa-solid px-2 md:px-3 fa-circle-info inline-block"></i>ওয়েবসাইটের কাজ চলছে..</h1>
 
@@ -242,20 +295,28 @@
   </div>
 </div>
 
-<!-- next notice  -->
+<!--  notice 2  -->
 
 <!-- <div class=" justify-center w-full h-auto items-center mx-auto">
   <div class="border-[#a6e1ec] bg-[#d9edf7] border-[1px] rounded-md w-[95%] md:w-5/6 p-2  m-5   mx-auto ">
-    <h1 class="text-center font-bold font-mono text-2xl text-[#31708f]"> hello.. </h1>
-    <hr class="bg-[#a6e1ec] mx-4 w-6/6 h-[2px]">
-    <p class="text-justify  text-lg  mb-2 text-[#31708f]  p-2"> xxxx </p>
+    <h1 class="text-center font-bold font-mono text-xl text-[#31708f]"> Basic Computer Course  to thrive in the 4th Industrial Revolution </h1>
+    <hr class="bg-[#a6e1ec] mx-4 w-6/6 h-[2px] mb-4 ">
+    <p class="text-justify   h-auto   mb-2 text-[#31708f] animate-pulse  p-2"><a href="./html/ongoingEvents.html" class=" h-4 w-4 p-2 text-white   bg-[#337ab7] rounded-md capitalize " >  click here  </a></p>
+    
   </div>
 </div> -->
 
+<div class=" justify-center w-full h-auto items-center mx-auto">
+  <div class="border-[#3c763d] bg-[#dff0d8] border-[1px] rounded-md w-[95%] md:w-5/6 p-2  m-5   mx-auto ">
+    <h1 class="text-center font-bold font-mono text-xl text-[#3c763d]"> Basic Computer Course  to thrive in the 4th Industrial Revolution </h1>
+    <hr class="bg-[#3c763d] mx-4 w-6/6 h-[2px] mb-4 ">
+    <p class="text-justify   h-auto   mb-2 text-[#31708f] animate-pulse  p-2"><a href="./html/ongoingEvents.html" class=" h-4 w-4 p-2 text-white   bg-[#337ab7] rounded-md capitalize " >  click here  </a></p>
+    
+  </div>
 </div>
 
-
-
+</div>
+ <!-- notice end  -->
 
 
 
@@ -379,7 +440,7 @@
     </p>
   </div>
 </footer>
-<script src="./js/nav.js"></script>
+<script src="./assets/js/nav.js"></script>
 <script src="./index.js"></script>
 <!-- animation data  -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
