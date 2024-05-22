@@ -9,7 +9,7 @@ async function video(){
       <div class="rounded-lg shadow-lg bg-white  max-w-sm">
         <iframe  class="rounded-t-md relative w-full h-[240px]" src="${vdieo2.link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
           <div class="p-6">
-              <h5 class="text-gray-900 text-xl  font-semibold mb-2 underline">${vdieo2.title}</h5>
+              <h5 class=" text-xl  font-semibold mb-2 text-indigo-600 ">${vdieo2.title}</h5>
               <p class="text-gray-700 text-base mb-4">
             ${vdieo2.about}
               </p>
